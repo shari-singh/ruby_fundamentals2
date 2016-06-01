@@ -7,5 +7,13 @@ def list(grocery_list)
 end
 
 grocery_list << "rice"
-
 list(grocery_list)
+puts grocery_list.count
+
+if grocery_list == ["bananas"]
+  puts "You need to pick up bananas"
+else
+  puts "You don't need to pick up bananas"
+end
+
+puts grocery_list[1]
