@@ -17,3 +17,6 @@ puts "--------"
 students.each do |cohorts, new_amount|
   puts "#{cohorts}: #{new_amount + (new_amount * 0.05).to_i} students"
 end
+puts "--------"
+students.delete(:cohort2)
+list(students)
