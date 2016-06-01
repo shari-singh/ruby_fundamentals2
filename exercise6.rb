@@ -1,7 +1,11 @@
 grocery_list = ["marshmallows", "graham crackers", "chocolate"]
 
-grocery_list.each do |food|
-  puts "* #{food}"
+def list(grocery_list)
+  grocery_list.map do |food|
+    puts "* #{food}" 
+  end
 end
 
 grocery_list << "rice"
+
+puts list(grocery_list)
