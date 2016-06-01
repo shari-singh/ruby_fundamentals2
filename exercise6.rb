@@ -5,8 +5,8 @@ def list(grocery_list)
     puts "* #{food}"
   end
 end
-
 grocery_list << "rice"
+grocery_list << "salmon"
 list(grocery_list)
 puts grocery_list.count
 
@@ -17,4 +17,7 @@ else
 end
 
 puts grocery_list[1]
+list(grocery_list.sort)
+puts "--------------"
+grocery_list.delete_at(4)
 list(grocery_list.sort)
